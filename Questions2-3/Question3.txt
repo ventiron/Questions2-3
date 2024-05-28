@@ -1,5 +1,4 @@
 Select ProductTable.Name, CategoryTable.Name
 From ProductTable
-LEFT JOIN ProductAndCategoryConnectionTable
-Left JOIN ProductAndCategoryConnectionTable ON ProductTable.Id = ProductAndCategoryConnectionTable.Product_Id 
-Left JOIN CategoryTable ON CategoryTable.Id = ProductAndCategoryConnectionTable.Category_id;
+Left JOIN ProductAndCategoryConnectionTable ON ProductTable.Id = ProductAndCategoryConnectionTable.ProductId 
+Left JOIN CategoryTable ON CategoryTable.Id = ProductAndCategoryConnectionTable.CategoryId;
