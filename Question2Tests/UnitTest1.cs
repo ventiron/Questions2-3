@@ -22,7 +22,7 @@ namespace Question2Tests
 
 
             double area = triangle.Area();
-            Assert.AreEqual(Math.Round(area,8), Math.Round(testArea, 8)); //Точность - 8 знаков после запятой
+            Assert.AreEqual(Math.Round(area,8), Math.Round(testArea, 8)); //Precision - 8 digits
         }
 
         [TestMethod]
@@ -41,7 +41,7 @@ namespace Question2Tests
 
 
             double area = rightTriangle.Area();
-            Assert.AreEqual(Math.Round(area, 8), Math.Round(testArea, 8));
+            Assert.AreEqual(Math.Round(area, 8), Math.Round(testArea, 8)); //Precision - 8 digits
         }
 
         [TestMethod]
@@ -55,8 +55,10 @@ namespace Question2Tests
 
             double testArea = Math.PI * radius * radius;
 
+
+
             double area = circle.Area();
-            Assert.AreEqual(Math.Round(area, 8), Math.Round(testArea, 8));
+            Assert.AreEqual(Math.Round(area, 8), Math.Round(testArea, 8)); //Precision - 8 digits
         }
     }
 }
